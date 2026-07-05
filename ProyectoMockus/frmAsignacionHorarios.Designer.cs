@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             grpBuscarTrabajador = new GroupBox();
-            grpDatosTrabajador = new GroupBox();
-            lblTitulo = new Label();
-            lblClaveTrabaj = new Label();
-            txtBusacarClave = new TextBox();
             btnBuscar = new Button();
-            lblNombreCompleto = new Label();
-            lblSemestre = new Label();
-            lblDepartamento = new Label();
-            lblPuesto = new Label();
-            txtBuscarNombreCompleto = new TextBox();
-            txtSemestre = new TextBox();
-            txtDepartamento = new TextBox();
+            txtBusacarClave = new TextBox();
+            lblClaveTrabaj = new Label();
+            grpDatosTrabajador = new GroupBox();
             txtPuesto = new TextBox();
+            txtDepartamento = new TextBox();
+            txtSemestre = new TextBox();
+            txtBuscarNombreCompleto = new TextBox();
+            lblPuesto = new Label();
+            lblDepartamento = new Label();
+            lblSemestre = new Label();
+            lblNombreCompleto = new Label();
+            lblTitulo = new Label();
             grpHorario = new GroupBox();
+            lblDias = new Label();
+            chkViernes = new CheckBox();
+            chkJueves = new CheckBox();
+            chkMiercoles = new CheckBox();
+            chkMartes = new CheckBox();
+            chkLunes = new CheckBox();
+            lblHoraSalida = new Label();
+            dtpHoraSalida = new DateTimePicker();
+            lblHoraEntrada = new Label();
+            dtpHoraEntrada = new DateTimePicker();
             btnGuardar = new Button();
             btnCancelar = new Button();
-            dtpHoraEntrada = new DateTimePicker();
-            lblHoraEntrada = new Label();
-            dtpHoraSalida = new DateTimePicker();
-            lblHoraSalida = new Label();
-            chkLunes = new CheckBox();
-            chkMartes = new CheckBox();
-            chkMiercoles = new CheckBox();
-            chkJueves = new CheckBox();
-            chkViernes = new CheckBox();
-            lblDias = new Label();
             grpBuscarTrabajador.SuspendLayout();
             grpDatosTrabajador.SuspendLayout();
             grpHorario.SuspendLayout();
@@ -72,6 +72,34 @@
             grpBuscarTrabajador.TabIndex = 0;
             grpBuscarTrabajador.TabStop = false;
             grpBuscarTrabajador.Text = "Buscar Trabajador";
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.BackColor = SystemColors.HotTrack;
+            btnBuscar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBuscar.ForeColor = SystemColors.ControlLightLight;
+            btnBuscar.Location = new Point(293, 51);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(100, 26);
+            btnBuscar.TabIndex = 2;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // txtBusacarClave
+            // 
+            txtBusacarClave.Location = new Point(18, 49);
+            txtBusacarClave.Name = "txtBusacarClave";
+            txtBusacarClave.Size = new Size(150, 29);
+            txtBusacarClave.TabIndex = 1;
+            // 
+            // lblClaveTrabaj
+            // 
+            lblClaveTrabaj.AutoSize = true;
+            lblClaveTrabaj.Location = new Point(18, 25);
+            lblClaveTrabaj.Name = "lblClaveTrabaj";
+            lblClaveTrabaj.Size = new Size(154, 21);
+            lblClaveTrabaj.TabIndex = 0;
+            lblClaveTrabaj.Text = "Clave del Trabajador:";
             // 
             // grpDatosTrabajador
             // 
@@ -91,70 +119,33 @@
             grpDatosTrabajador.TabStop = false;
             grpDatosTrabajador.Text = "Datos Del Trabajador";
             // 
-            // lblTitulo
+            // txtPuesto
             // 
-            lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitulo.Location = new Point(141, 9);
-            lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(233, 30);
-            lblTitulo.TabIndex = 2;
-            lblTitulo.Text = "Asignacion de Horario";
+            txtPuesto.Location = new Point(247, 105);
+            txtPuesto.Name = "txtPuesto";
+            txtPuesto.Size = new Size(200, 29);
+            txtPuesto.TabIndex = 7;
             // 
-            // lblClaveTrabaj
+            // txtDepartamento
             // 
-            lblClaveTrabaj.AutoSize = true;
-            lblClaveTrabaj.Location = new Point(18, 25);
-            lblClaveTrabaj.Name = "lblClaveTrabaj";
-            lblClaveTrabaj.Size = new Size(154, 21);
-            lblClaveTrabaj.TabIndex = 0;
-            lblClaveTrabaj.Text = "Clave del Trabajador:";
+            txtDepartamento.Location = new Point(18, 105);
+            txtDepartamento.Name = "txtDepartamento";
+            txtDepartamento.Size = new Size(200, 29);
+            txtDepartamento.TabIndex = 6;
             // 
-            // txtBusacarClave
+            // txtSemestre
             // 
-            txtBusacarClave.Location = new Point(18, 49);
-            txtBusacarClave.Name = "txtBusacarClave";
-            txtBusacarClave.Size = new Size(150, 29);
-            txtBusacarClave.TabIndex = 1;
+            txtSemestre.Location = new Point(247, 49);
+            txtSemestre.Name = "txtSemestre";
+            txtSemestre.Size = new Size(200, 29);
+            txtSemestre.TabIndex = 5;
             // 
-            // btnBuscar
+            // txtBuscarNombreCompleto
             // 
-            btnBuscar.BackColor = SystemColors.HotTrack;
-            btnBuscar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnBuscar.ForeColor = SystemColors.ControlLightLight;
-            btnBuscar.Location = new Point(293, 51);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(100, 26);
-            btnBuscar.TabIndex = 2;
-            btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // lblNombreCompleto
-            // 
-            lblNombreCompleto.AutoSize = true;
-            lblNombreCompleto.Location = new Point(18, 25);
-            lblNombreCompleto.Name = "lblNombreCompleto";
-            lblNombreCompleto.Size = new Size(143, 21);
-            lblNombreCompleto.TabIndex = 0;
-            lblNombreCompleto.Text = "Nombre Completo:";
-            // 
-            // lblSemestre
-            // 
-            lblSemestre.AutoSize = true;
-            lblSemestre.Location = new Point(247, 25);
-            lblSemestre.Name = "lblSemestre";
-            lblSemestre.Size = new Size(78, 21);
-            lblSemestre.TabIndex = 1;
-            lblSemestre.Text = "Semestre:";
-            // 
-            // lblDepartamento
-            // 
-            lblDepartamento.AutoSize = true;
-            lblDepartamento.Location = new Point(18, 81);
-            lblDepartamento.Name = "lblDepartamento";
-            lblDepartamento.Size = new Size(113, 21);
-            lblDepartamento.TabIndex = 2;
-            lblDepartamento.Text = "Departamento:";
+            txtBuscarNombreCompleto.Location = new Point(18, 49);
+            txtBuscarNombreCompleto.Name = "txtBuscarNombreCompleto";
+            txtBuscarNombreCompleto.Size = new Size(200, 29);
+            txtBuscarNombreCompleto.TabIndex = 4;
             // 
             // lblPuesto
             // 
@@ -165,33 +156,42 @@
             lblPuesto.TabIndex = 3;
             lblPuesto.Text = "Puesto:";
             // 
-            // txtBuscarNombreCompleto
+            // lblDepartamento
             // 
-            txtBuscarNombreCompleto.Location = new Point(18, 49);
-            txtBuscarNombreCompleto.Name = "txtBuscarNombreCompleto";
-            txtBuscarNombreCompleto.Size = new Size(200, 29);
-            txtBuscarNombreCompleto.TabIndex = 4;
+            lblDepartamento.AutoSize = true;
+            lblDepartamento.Location = new Point(18, 81);
+            lblDepartamento.Name = "lblDepartamento";
+            lblDepartamento.Size = new Size(113, 21);
+            lblDepartamento.TabIndex = 2;
+            lblDepartamento.Text = "Departamento:";
             // 
-            // txtSemestre
+            // lblSemestre
             // 
-            txtSemestre.Location = new Point(247, 49);
-            txtSemestre.Name = "txtSemestre";
-            txtSemestre.Size = new Size(200, 29);
-            txtSemestre.TabIndex = 5;
+            lblSemestre.AutoSize = true;
+            lblSemestre.Location = new Point(247, 25);
+            lblSemestre.Name = "lblSemestre";
+            lblSemestre.Size = new Size(78, 21);
+            lblSemestre.TabIndex = 1;
+            lblSemestre.Text = "Semestre:";
             // 
-            // txtDepartamento
+            // lblNombreCompleto
             // 
-            txtDepartamento.Location = new Point(18, 105);
-            txtDepartamento.Name = "txtDepartamento";
-            txtDepartamento.Size = new Size(200, 29);
-            txtDepartamento.TabIndex = 6;
+            lblNombreCompleto.AutoSize = true;
+            lblNombreCompleto.Location = new Point(18, 25);
+            lblNombreCompleto.Name = "lblNombreCompleto";
+            lblNombreCompleto.Size = new Size(143, 21);
+            lblNombreCompleto.TabIndex = 0;
+            lblNombreCompleto.Text = "Nombre Completo:";
             // 
-            // txtPuesto
+            // lblTitulo
             // 
-            txtPuesto.Location = new Point(247, 105);
-            txtPuesto.Name = "txtPuesto";
-            txtPuesto.Size = new Size(200, 29);
-            txtPuesto.TabIndex = 7;
+            lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitulo.Location = new Point(141, 9);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(233, 30);
+            lblTitulo.TabIndex = 2;
+            lblTitulo.Text = "Asignacion de Horario";
             // 
             // grpHorario
             // 
@@ -212,6 +212,109 @@
             grpHorario.TabIndex = 3;
             grpHorario.TabStop = false;
             grpHorario.Text = "Horario";
+            // 
+            // lblDias
+            // 
+            lblDias.AutoSize = true;
+            lblDias.Location = new Point(18, 138);
+            lblDias.Name = "lblDias";
+            lblDias.Size = new Size(43, 21);
+            lblDias.TabIndex = 9;
+            lblDias.Text = "Dias:";
+            // 
+            // chkViernes
+            // 
+            chkViernes.AutoSize = true;
+            chkViernes.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chkViernes.Location = new Point(342, 143);
+            chkViernes.Name = "chkViernes";
+            chkViernes.Size = new Size(64, 17);
+            chkViernes.TabIndex = 8;
+            chkViernes.Text = "Viernes";
+            chkViernes.UseVisualStyleBackColor = true;
+            // 
+            // chkJueves
+            // 
+            chkJueves.AutoSize = true;
+            chkJueves.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chkJueves.Location = new Point(277, 143);
+            chkJueves.Name = "chkJueves";
+            chkJueves.Size = new Size(59, 17);
+            chkJueves.TabIndex = 7;
+            chkJueves.Text = "Jueves";
+            chkJueves.UseVisualStyleBackColor = true;
+            // 
+            // chkMiercoles
+            // 
+            chkMiercoles.AutoSize = true;
+            chkMiercoles.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chkMiercoles.Location = new Point(196, 143);
+            chkMiercoles.Name = "chkMiercoles";
+            chkMiercoles.Size = new Size(75, 17);
+            chkMiercoles.TabIndex = 6;
+            chkMiercoles.Text = "Miercoles";
+            chkMiercoles.UseVisualStyleBackColor = true;
+            // 
+            // chkMartes
+            // 
+            chkMartes.AutoSize = true;
+            chkMartes.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chkMartes.Location = new Point(129, 142);
+            chkMartes.Name = "chkMartes";
+            chkMartes.Size = new Size(61, 17);
+            chkMartes.TabIndex = 5;
+            chkMartes.Text = "Martes";
+            chkMartes.UseVisualStyleBackColor = true;
+            // 
+            // chkLunes
+            // 
+            chkLunes.AutoSize = true;
+            chkLunes.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chkLunes.Location = new Point(67, 143);
+            chkLunes.Name = "chkLunes";
+            chkLunes.Size = new Size(56, 17);
+            chkLunes.TabIndex = 4;
+            chkLunes.Text = "Lunes";
+            chkLunes.UseVisualStyleBackColor = true;
+            // 
+            // lblHoraSalida
+            // 
+            lblHoraSalida.AutoSize = true;
+            lblHoraSalida.Location = new Point(18, 79);
+            lblHoraSalida.Name = "lblHoraSalida";
+            lblHoraSalida.Size = new Size(111, 21);
+            lblHoraSalida.TabIndex = 3;
+            lblHoraSalida.Text = "Hora de Salida";
+            // 
+            // dtpHoraSalida
+            // 
+            dtpHoraSalida.Format = DateTimePickerFormat.Time;
+            dtpHoraSalida.Location = new Point(18, 103);
+            dtpHoraSalida.Name = "dtpHoraSalida";
+            dtpHoraSalida.ShowUpDown = true;
+            dtpHoraSalida.Size = new Size(122, 29);
+            dtpHoraSalida.TabIndex = 2;
+            dtpHoraSalida.Value = new DateTime(2026, 7, 4, 15, 0, 0, 0);
+            // 
+            // lblHoraEntrada
+            // 
+            lblHoraEntrada.AutoSize = true;
+            lblHoraEntrada.Location = new Point(18, 23);
+            lblHoraEntrada.Name = "lblHoraEntrada";
+            lblHoraEntrada.Size = new Size(122, 21);
+            lblHoraEntrada.TabIndex = 1;
+            lblHoraEntrada.Text = "Hora de Entrada";
+            // 
+            // dtpHoraEntrada
+            // 
+            dtpHoraEntrada.Format = DateTimePickerFormat.Time;
+            dtpHoraEntrada.Location = new Point(18, 47);
+            dtpHoraEntrada.MinDate = new DateTime(2026, 7, 4, 0, 0, 0, 0);
+            dtpHoraEntrada.Name = "dtpHoraEntrada";
+            dtpHoraEntrada.ShowUpDown = true;
+            dtpHoraEntrada.Size = new Size(122, 29);
+            dtpHoraEntrada.TabIndex = 0;
+            dtpHoraEntrada.Value = new DateTime(2026, 7, 4, 7, 0, 0, 0);
             // 
             // btnGuardar
             // 
@@ -236,109 +339,6 @@
             btnCancelar.TabIndex = 5;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
-            // 
-            // dtpHoraEntrada
-            // 
-            dtpHoraEntrada.Format = DateTimePickerFormat.Time;
-            dtpHoraEntrada.Location = new Point(18, 47);
-            dtpHoraEntrada.MinDate = new DateTime(2026, 7, 4, 0, 0, 0, 0);
-            dtpHoraEntrada.Name = "dtpHoraEntrada";
-            dtpHoraEntrada.ShowUpDown = true;
-            dtpHoraEntrada.Size = new Size(122, 29);
-            dtpHoraEntrada.TabIndex = 0;
-            dtpHoraEntrada.Value = new DateTime(2026, 7, 4, 7, 0, 0, 0);
-            // 
-            // lblHoraEntrada
-            // 
-            lblHoraEntrada.AutoSize = true;
-            lblHoraEntrada.Location = new Point(18, 23);
-            lblHoraEntrada.Name = "lblHoraEntrada";
-            lblHoraEntrada.Size = new Size(122, 21);
-            lblHoraEntrada.TabIndex = 1;
-            lblHoraEntrada.Text = "Hora de Entrada";
-            // 
-            // dtpHoraSalida
-            // 
-            dtpHoraSalida.Format = DateTimePickerFormat.Time;
-            dtpHoraSalida.Location = new Point(18, 103);
-            dtpHoraSalida.Name = "dtpHoraSalida";
-            dtpHoraSalida.ShowUpDown = true;
-            dtpHoraSalida.Size = new Size(122, 29);
-            dtpHoraSalida.TabIndex = 2;
-            dtpHoraSalida.Value = new DateTime(2026, 7, 4, 15, 0, 0, 0);
-            // 
-            // lblHoraSalida
-            // 
-            lblHoraSalida.AutoSize = true;
-            lblHoraSalida.Location = new Point(18, 79);
-            lblHoraSalida.Name = "lblHoraSalida";
-            lblHoraSalida.Size = new Size(111, 21);
-            lblHoraSalida.TabIndex = 3;
-            lblHoraSalida.Text = "Hora de Salida";
-            // 
-            // chkLunes
-            // 
-            chkLunes.AutoSize = true;
-            chkLunes.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            chkLunes.Location = new Point(67, 143);
-            chkLunes.Name = "chkLunes";
-            chkLunes.Size = new Size(56, 17);
-            chkLunes.TabIndex = 4;
-            chkLunes.Text = "Lunes";
-            chkLunes.UseVisualStyleBackColor = true;
-            // 
-            // chkMartes
-            // 
-            chkMartes.AutoSize = true;
-            chkMartes.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            chkMartes.Location = new Point(129, 142);
-            chkMartes.Name = "chkMartes";
-            chkMartes.Size = new Size(61, 17);
-            chkMartes.TabIndex = 5;
-            chkMartes.Text = "Martes";
-            chkMartes.UseVisualStyleBackColor = true;
-            // 
-            // chkMiercoles
-            // 
-            chkMiercoles.AutoSize = true;
-            chkMiercoles.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            chkMiercoles.Location = new Point(196, 143);
-            chkMiercoles.Name = "chkMiercoles";
-            chkMiercoles.Size = new Size(75, 17);
-            chkMiercoles.TabIndex = 6;
-            chkMiercoles.Text = "Miercoles";
-            chkMiercoles.UseVisualStyleBackColor = true;
-            // 
-            // chkJueves
-            // 
-            chkJueves.AutoSize = true;
-            chkJueves.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            chkJueves.Location = new Point(277, 143);
-            chkJueves.Name = "chkJueves";
-            chkJueves.Size = new Size(59, 17);
-            chkJueves.TabIndex = 7;
-            chkJueves.Text = "Jueves";
-            chkJueves.UseVisualStyleBackColor = true;
-            // 
-            // chkViernes
-            // 
-            chkViernes.AutoSize = true;
-            chkViernes.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            chkViernes.Location = new Point(342, 143);
-            chkViernes.Name = "chkViernes";
-            chkViernes.Size = new Size(64, 17);
-            chkViernes.TabIndex = 8;
-            chkViernes.Text = "Viernes";
-            chkViernes.UseVisualStyleBackColor = true;
-            // 
-            // lblDias
-            // 
-            lblDias.AutoSize = true;
-            lblDias.Location = new Point(18, 138);
-            lblDias.Name = "lblDias";
-            lblDias.Size = new Size(43, 21);
-            lblDias.TabIndex = 9;
-            lblDias.Text = "Dias:";
             // 
             // frmAsignacionHorarios
             // 
